@@ -7,7 +7,7 @@ Minimalistic Twitter desktop client for managing multiple accounts.
 
 ## Download
 
-Sorry, no time to build the app and upload to GitHub for now. I will set up Automatic GitHub release soon.
+Sorry, no time to build the app and upload to GitHub for now. I will set up Automatic GitHub release soon. (PR welcome)
 
 However you can always build from source, and it works on macOS/Windows/Linux:
 

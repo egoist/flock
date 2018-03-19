@@ -1,0 +1,73 @@
+:root {
+  --header-height: 24px;
+}
+
+html, body, #app, .webview {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: white;
+  font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.page {
+  height: calc(100% - var(--header-height));
+}
+
+.app-header {
+  -webkit-app-region: drag;
+  height: var(--header-height);
+  line-height: var(--header-height);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0px 2px 2px hsla(0, 0%, 62%, 0.5);
+}
+
+.dropdown-item:hover {
+  background-color: #f9f9f9;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  border: 5px solid transparent;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+}
+
+.arrow.down {
+  border-top-color: #9a9a9a;
+  margin-top: 5px;
+}
+
+.arrow.up {
+  border-bottom-color: #9a9a9a;
+  margin-top: -4px;
+}
+
+.dropdown-item {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

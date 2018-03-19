@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "flock",
+  "description": "my wicked project",
+  "version": "0.0.0-this-does-not-matter",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "cd app && npm install && rm -rf package-lock.json",
+    "test": "echo lol",
+    "start": "electron app/index.js",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "moe.egoist.flock",
+    "productName": "Flock",
+    "asar": true,
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false
+    },
+    "linux": {
+      "category": "public.app-category.developer-tools"
+    }
+  },
+  "devDependencies": {
+    "electron": "^1.6.10",
+    "electron-builder": "^18.0.1",
+    "electron-builder-squirrel-windows": "^18.0.0",
+    "electron-devtools-installer": "^2.2.3"
+  }
+}

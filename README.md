@@ -27,6 +27,10 @@ yarn
 yarn start
 ```
 
+## Caveats
+
+- No web push support, see [#6697](https://github.com/electron/electron/issues/6697).
+
 ## License
 
 MIT &copy; EGOIST

@@ -35,6 +35,7 @@ const store = new Vuex.Store({
         }
         return page
       })
+      config.set('pages', state.pages)
     }
   }
 })

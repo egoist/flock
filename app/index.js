@@ -44,8 +44,6 @@ function createMainWindow() {
     y: lastWindowState.y,
     width: lastWindowState.width,
     height: lastWindowState.height,
-    minWidth: 200,
-    minHeight: 900,
     titleBarStyle: 'hidden',
     backgroundColor: '#fff'
     // transparent: true

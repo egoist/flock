@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   ipc.sendToHost('ready')
   if (location.pathname === '/') {
-    ipc.sendToHost('set-name', window.__INITIAL_STATE__.session.user.name)
+    const name = window.__INITIAL_STATE__.session.user.name
+    if (name) {
+      ipc.sendToHost('set-name', name)
+    }
   }
 })
